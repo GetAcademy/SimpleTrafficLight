@@ -1,0 +1,20 @@
+1. Repetere grunnferdigheter i JavaScript - eks: trafikklys
+    - endre html med document.getElementById('id').innerHTML = 
+    - lage funksjon med en eller flere kommandoer
+    - kalle funksjon fra knapp eller annen funksjon
+2. Repetere parametre og forenkle koden med det
+    - dele opp i flere funksjoner som gjør .innerHTML += 
+3. Introdusere returverdi og endre eksempel
+4. Annet eksempel på returverdi enn html
+5. Introdusere if-setninger, enkle sammenligninger og logiske verdier
+    - generell funksjon for lampe som er av eller på
+
+
+
+Implementere <-> Refactoring
+
+1. Hardkode i HTML
+2. Flytte til JavaScript
+3. Lager funksjonalitet
+4. Gjøre refactoring = gjøre koden bedre, men sjekke at den gjør det samme
+5. Ta i bruk parametre og MVC 
