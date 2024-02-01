@@ -8,8 +8,6 @@
 </head>
 
 <body>
-    <h1>Pause til 13:35</h1>
-
     <div>
         Alder: <br />
         <input id="age" onchange="checkIfCanBuyBeer()" type="range" min="1" step="1" max="100" /><br />
@@ -22,16 +20,31 @@
     <div id="info"></div>
 
     <script>
+        //     code2flow
+
         checkIfCanBuyBeer();
         function checkIfCanBuyBeer() {
             let age = document.getElementById('age').valueAsNumber;
             let looksAge = document.getElementById('looksAge').valueAsNumber;
             let hasId = document.getElementById('hasId').checked;
 
+            if (looksAge >= 25) {
+                answer = '<span style="color: green">Ja</span>';
+            } else if (hasId) {
+                if (age >= 18) {
+                    answer = '<span style="color: green">Ja</span>';
+                } else {
+                    answer = '<span style="color: red">Nei</span>';
+                }
+            } else {
+                answer = '<span style="color: red">Nei</span>';
+            }
+
             document.getElementById('info').innerHTML = /*HTML*/`
                 Alder: ${age}<br/>
                 Ser ut som alder: ${looksAge}<br/>
                 Har legitimasjon: ${hasId}<br/>
+                Får kjøpe øl: ${answer}<br/>
             `;
         }
 
